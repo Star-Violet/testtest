@@ -22,7 +22,7 @@
 
 	<table>
 		<tr>
-			<th>이름 : </th>
+			<th>이름 :sdfsdfsd </th>
 			<td><%=vo.getMyname() %></td>
 		</tr>
 		<tr>

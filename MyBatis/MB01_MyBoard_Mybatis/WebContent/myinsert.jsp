@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+GDSGSDGSGSDGD<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
 <% request.setCharacterEncoding("UTF-8"); %>
@@ -30,7 +30,8 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="right">
-					<input type="submit" value="입력">
+					<input type="submit" value="입력">'
+					sdfsdfsd
 					<input type="button" value="취소" onclick="location.href='mylist.jsp'">	
 				</td>
 			</tr>

@@ -23,6 +23,7 @@
 	
 	MyBoardDao dao = new MyBoardDao();
 	int res = dao.insert(vo);
+	sdfsfdsfsfsdf
 	
 	if (res>0) {
 %>
