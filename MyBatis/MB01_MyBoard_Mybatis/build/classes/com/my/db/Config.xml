@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+    <!-- db접속 정보 파일 -->
+  	<properties resource="com/my/db/db.properties" />
+  	
+  	<typeAliases>
+  		<typeAlias type="com.my.vo.MyBoardVo" alias="MyBoardVo"/>  	
+  	</typeAliases>
+  	
+  	<!-- db 접속 설정 -->
+  	<environments default="development">
+  		<environment id="development">
+  			<transactionManager type="JDBC" />
+  			<dataSource type="POOLED">	<!-- UNPOOLED -->
+  				<property name="driver"	value="${driver}"/>
+  				<property name="url" value="${url}"/>
+  				<property name="username" value="${username}"/>
+  				<property name="password" value="${password}"/>
+  			</dataSource>
+  		</environment>
+  	</environments>
+  	
+  	<!-- mapper -->
+  	<!-- 사용하려는 쿼리가 저장된 mapper파일 등록 -->
+  	<mappers>
+  		<mapper resource="com/my/db/Mapper.xml"/>
+  	</mappers>
+  	
+</configuration>
